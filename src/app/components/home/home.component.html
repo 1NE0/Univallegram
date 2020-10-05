@@ -1,0 +1,16 @@
+<div class="card-columns">
+    <div class="card" *ngFor="let video of videos">
+        <img [src]="video.thumbnails.high.url" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">{{ video.title }}</h5>
+            <p class="card-text">
+                <strong>Autor:</strong> {{ video.channelTitle }}
+            </p>
+            <p class="card-text">
+                <strong>Publicado:</strong> {{ video.publishedAt | date }}
+            </p>
+            <button class="btn btn-outline-dark btn-block" (click) = "mostrarVideo(video)">Ver Video</button>
+        </div>
+    </div>
+</div>
+<hr>
