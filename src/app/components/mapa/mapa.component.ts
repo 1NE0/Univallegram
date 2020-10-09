@@ -20,11 +20,12 @@ export class MapaComponent implements OnInit {
   getClima(cityName: string, countryCode: string){
     this.Mapa.obtenerClima(cityName, countryCode)
       .subscribe(resp =>{
+        console.log(resp)
         this.weather = resp
       },
     )
   }
-
+  
   submit(cityName : HTMLInputElement, countryCode: HTMLInputElement){
     //console.log(cityName.value,countryCode.value)
     if(cityName.value && countryCode.value){
