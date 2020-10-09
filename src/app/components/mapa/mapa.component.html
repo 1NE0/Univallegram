@@ -1,0 +1,27 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body">
+                <form (submit)="submit(cityName,countryCode)">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nombre de Ciudad" #cityName>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Codigo de Pais" #countryCode>
+                    </div>
+                    <button class="btn btn-block btn-secondary mt-3" >Obtener Clima</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!--ngIf : Si el weather no tiene datos, que no pinte la card.-->
+            <div *ngIf ="weather" class="card card-body">
+                <p>Temperatura: {{ weather.main.temp }} ºC</p>
+                <p>Latitud: {{ weather.coord.lat }}</p>
+                <p>Longitud: {{ weather.coord.lon }}</p>
+                <p>Presion: {{ weather.main.pressure }}</p>
+                <p>Descripcion: {{ weather.weather[0].description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
