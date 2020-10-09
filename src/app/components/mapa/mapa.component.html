@@ -1,0 +1,74 @@
+
+<div class="icon thunder-storm">
+    <div class="cloud"></div>
+    <div class="lightning">
+      <div class="bolt"></div>
+      <div class="bolt"></div>
+    </div>
+  </div>
+  
+  <div class="icon cloudy">
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+  </div>
+  
+  <div class="icon flurries">
+    <div class="cloud"></div>
+    <div class="snow">
+      <div class="flake"></div>
+      <div class="flake"></div>
+    </div>
+  </div>
+  
+  <div class="icon sunny">
+    <div class="sun">
+      <div class="rays"></div>
+    </div>
+  </div>
+  
+  <div class="icon rainy">
+    <div class="cloud"></div>
+    <div class="rain"></div>
+  </div>
+
+  <h6 class="font-italic text-center">En esta seccion recopilamos y procesamos datos meteorológicos 
+    de diferentes fuentes, como modelos meteorológicos globales y locales, satélites, 
+    radares y una amplia red de estaciones meteorológicas.
+    Acceda a estos datos actuales para cualquier ubicación, incluimos más 
+    de 200.000 ciudades.
+   <a href="https://www.inm.gob.mx/gobmx/word/index.php/listado-de-paises-con-abreviaturas/">
+    Para consultar las abreviaturas de los paises deseados ingresa aqui.</a>
+   </h6> 
+   
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body bg-light">
+              <img src="../../../assets/mapa-1024x458.png" width="473">
+              <div class="form-group mt-2" >
+                <form (submit)="submit(cityName, countryCode)">
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Nombre de Ciudad" #cityName>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Codigo de Pais" #countryCode>
+                  </div>
+                  <button class="btn btn-block btn-info mt-3" >Consultar Clima</button>
+              </form>
+              </div>                
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!--ngIf : Si el weather no tiene datos, que no pinte la card.-->
+            <div *ngIf ="weather" class="card text-white bg-light mb-3" style="max-width: 18rem;">
+              <div class="card-header text-center" style="color: black;">Resultados</div>
+              <div class="card-body text-center">
+                <p style="color: black;"><strong>Temperatura: </strong>{{ weather.main.temp }} ºC</p>
+                <p style="color: black;"><strong>Latitud: </strong>{{ weather.coord.lat }}</p>
+                <p style="color: black;"><strong>Longitud: </strong>{{ weather.coord.lon }}</p>
+                <p style="color: black;"><strong>Presion: </strong>{{ weather.main.pressure }}</p>
+                <p style="color: black;"><strong>Descripcion: </strong>{{ weather.weather[0].description }}</p>
+              </div>
+        </div>
+    </div>
+</div>

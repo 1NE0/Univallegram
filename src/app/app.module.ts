@@ -9,6 +9,7 @@ import { CardsCursosComponent } from './cards-cursos/cards-cursos.component';
 import { LiveComponent } from './components/live/live.component';
 import { HomeComponent } from './components/home/home.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
+import { MapaComponent } from './components/mapa/mapa.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NoticiasComponent } from './components/noticias/noticias.component';
     CardsCursosComponent,
     LiveComponent,
     HomeComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    MapaComponent
   ],
   imports: [
     BrowserModule,
