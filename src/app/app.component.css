@@ -191,8 +191,8 @@ body{
   ul {
     position: fixed;
     z-index: 1;
-    top: 0;
-    bottom: 0;
+    top: 1;
+    bottom: 529px;
     left: 0;
     margin: auto;
     height: 100px;
@@ -658,10 +658,15 @@ ul {
     color: #fff;
 }
 ul.social-icons {
-    margin-top: 10px;
-    bottom: 0%;
-    right: 1px;
-    width: 500px;
+    
+  left: -190px;
+  margin-top: 10px;
+  bottom: -645px;
+  /* top: 650px; */
+  right: 8px;
+  width: 500px;
+  position: relative;
+  text-align: center;
     
 }
 .social-icons li {
