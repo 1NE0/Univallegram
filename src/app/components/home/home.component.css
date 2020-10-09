@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+  
+/* .card {
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: rgb(0, 0, 0)14, 13, 13);
+    width: 50%;
+    height: 400px;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+} */
+.card{
+    transition: all .4s ;
+    border-color: black;
+    width: auto;
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
