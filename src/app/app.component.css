@@ -2,6 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
+
+body{
+  overflow-x: scroll;
+}
+.noticias{
+  width: 100%;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
 .textoPrincipal{
   font-family: 'Archivo Black', sans-serif;
   font-weight: lighter;

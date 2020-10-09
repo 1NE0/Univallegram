@@ -8,6 +8,7 @@ import { NavComponent } from './nav/nav.component';
 import { CardsCursosComponent } from './cards-cursos/cards-cursos.component';
 import { LiveComponent } from './components/live/live.component';
 import { HomeComponent } from './components/home/home.component';
+import { NoticiasComponent } from './components/noticias/noticias.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HomeComponent } from './components/home/home.component';
     NavComponent,
     CardsCursosComponent,
     LiveComponent,
-    HomeComponent
+    HomeComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,
