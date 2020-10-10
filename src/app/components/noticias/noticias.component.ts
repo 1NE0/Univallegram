@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NoticiasServiceService } from '../../services/noticias-service.service';
-
+import swal from'sweetalert2';
 
 @Component({
   selector: 'app-noticias',
@@ -21,5 +21,7 @@ export class NoticiasComponent implements OnInit {
       this.noticiasL = response.articles;
       });
   }
+  
+  
 
 }

@@ -10,6 +10,7 @@
     </div>
     
   </div>
+
   <div class="contenido">
     <div class="result-panel">
       <div *ngFor="let result of giphyService.searchResults$ | async" class="imagen">
@@ -18,4 +19,10 @@
       </div>
     </div>
   </div>
-  
+
+  <!-- <div class="wrapper">
+    <div class="row">
+      <div *ngFor="let result of giphyService.searchResults$ | async">
+        <a [href]="result.url" target="_blank"><img [src]="result.images.fixed_width.url" [alt]="result.title"></a>
+    </div>
+  </div> -->

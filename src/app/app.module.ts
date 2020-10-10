@@ -12,6 +12,7 @@ import { NoticiasComponent } from './components/noticias/noticias.component';
 import { MapaComponent } from './components/mapa/mapa.component';
 import { GifComponent } from './components/gif/gif.component';
 import { FormsModule } from '@angular/forms';
+import { CreditosComponent } from './components/creditos/creditos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     NoticiasComponent,
     MapaComponent,
-    GifComponent
+    GifComponent,
+    CreditosComponent
   ],
   imports: [
     BrowserModule,
