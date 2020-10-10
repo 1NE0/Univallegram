@@ -14,7 +14,7 @@ export class BusquedaService {
   constructor(private http: HttpClient) { }
 
   getResults(){
-    const url = `${ this.URL}`;
+    const url = `${ this.URL }`;
     const params = new HttpParams()
       .set('key', this.apikey)
       .set('cx', this.idMotor)

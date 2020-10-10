@@ -3,7 +3,11 @@ html *,
 html *:before,
 html *:after { box-sizing: inherit; }
 
-
+.cajita{
+  overflow-y: scroll;
+  height: 500px;
+  width: 99%;
+}
 .titulo{
   font-family: 'Raleway', sans-serif;
   text-align: center;

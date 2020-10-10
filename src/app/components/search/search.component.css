@@ -1,0 +1,6 @@
+
+.caja{
+    overflow-y: scroll;
+    height: 500px;
+    width: 80%;
+}

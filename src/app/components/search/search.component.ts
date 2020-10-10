@@ -8,13 +8,27 @@ import { BusquedaService } from '../../services/busqueda.service';
 })
 export class SearchComponent implements OnInit {
 
-  constructor( private searh: BusquedaService ) { }
+  items : [] = [];
+  objBusqueda;
+  
+
+  constructor( private search: BusquedaService ) { }
 
   ngOnInit(): void {
+    this.mostrarResp();
+  } 
+
+  mostrarResp(){
+    this.search.getResults()
+    .subscribe(respuesta =>{
+      console.log(respuesta.items);
+      this.objBusqueda = respuesta.items
+    });
   }
 
-  buscar(){
-    return this.searh.getResults;
+  buscar(consulta : string){
+    if(consulta){
+      this.mostrarResp();
+    }
   }
-
 }
