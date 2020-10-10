@@ -10,6 +10,7 @@ import { LiveComponent } from './components/live/live.component';
 import { HomeComponent } from './components/home/home.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { MapaComponent } from './components/mapa/mapa.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MapaComponent } from './components/mapa/mapa.component';
     LiveComponent,
     HomeComponent,
     NoticiasComponent,
-    MapaComponent
+    MapaComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

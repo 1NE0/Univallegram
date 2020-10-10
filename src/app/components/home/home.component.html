@@ -1,4 +1,12 @@
-<h1> Videos subidos por el canal </h1>
+<h1 class="titulo"> YOUTUBE </h1>
+
+<div>
+    <h6 class="font-italic text-center">En esta seccion hicimos uso de la API v3 de Youtube para obtener 
+        la lista de los videos que tiene el canal.
+       </h6> 
+    <hr>
+</div>
+
 <div class="card-columns">
     <div class="card" *ngFor="let video of videos">
         <img [src]="video.thumbnails.high.url" class="card-img-top" alt="">
@@ -10,7 +18,7 @@
             <p class="card-text" style="color: black;">
                 <strong>Publicado:</strong> {{ video.publishedAt | date }}
             </p>
-            <button class="btn btn-outline-dark btn-block" (click) = "mostrarVideo(video)">Ver Video</button>
+            <button class="btn btn-danger btn-block" (click) = "mostrarVideo(video)">Ver Video</button>
         </div>
     </div>
 </div>
