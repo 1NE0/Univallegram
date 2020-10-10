@@ -10,6 +10,8 @@ import { LiveComponent } from './components/live/live.component';
 import { HomeComponent } from './components/home/home.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { MapaComponent } from './components/mapa/mapa.component';
+import { GifComponent } from './components/gif/gif.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { MapaComponent } from './components/mapa/mapa.component';
     LiveComponent,
     HomeComponent,
     NoticiasComponent,
-    MapaComponent
+    MapaComponent,
+    GifComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

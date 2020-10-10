@@ -1,0 +1,21 @@
+<a href="https://giphy.com/" class ="display:flex;" target="_blank"><img src="https://i.ibb.co/BtpQBK6/GIPHY-Logo-105px.png" height="86px" width="326px" alt=""></a>
+<p>Esta api fue sacada de su pagina oficial <a href="https://giphy.com/" target="_blank">giphy</a> con la cual implementamos este buscador</p>
+<p>que nos trae gifs con una cadena de texto en especifico</p>
+<div class="flex bg-blue-300 py-4 justify-center items-center fixed top-0 z-100 w-full inset-x-0 border-b border-gray-400 shadow">
+    <div class="input-group mb-3" >
+      <input placeholder="GIF Search" style="width=200px!important;" [(ngModel)]="searchTerm"  type="text" class="form-control" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" (click)="search()" type="button" id="button-addon1">Buscar</button>
+      </div>
+    </div>
+    
+  </div>
+  <div class="contenido">
+    <div class="result-panel">
+      <div *ngFor="let result of giphyService.searchResults$ | async" class="imagen">
+                <a [href]="result.url" target="_blank"><img [src]="result.images.fixed_width.url"  [alt]="result.title"></a>
+              
+      </div>
+    </div>
+  </div>
+  

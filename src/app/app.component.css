@@ -3,9 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 
+.contenido{
+  width: 100%;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+/* 
 body{
   overflow-x: scroll;
-}
+} */
 .noticias{
   width: 100%;
   flex-direction: row;
@@ -14,15 +20,15 @@ body{
 
 .textoPrincipal{
   font-family: 'Archivo Black', sans-serif;
-  font-weight: lighter;
-  position: relative;
-  left: 700px;
-  top: 350px;
+    font-weight: lighter;
+    position: relative;
+    left: 700px;
+    top: 188px;
 }
 .textoCenter{
   position: relative;
-  left: 700px;
-  top: 350px;
+    left: 700px;
+    top: 232px;
 }
 .textico{
   font-family: 'News Cycle', sans-serif;
@@ -117,7 +123,7 @@ body{
     left: 0;
   }
   
-  #p2, #p3, #p4, #p5 {
+  #p2, #p3, #p4, #p5 , #p6 {
     left: 200%;
   }
   
@@ -125,12 +131,14 @@ body{
   #p2 { background: #d7385e; }
   #p3 { background: #00587a; }
   #p4 { background: hsl(165, 50%, 48%); }
-  #p5 { background: rebeccapurple; }
-  
+  #p5 { background: rgb(0, 0, 0); }
+  #p6 { background: #121119;}
+
   #t2:target #p2,
   #t3:target #p3,
   #t4:target #p4,
-  #t5:target #p5 {
+  #t5:target #p5,
+  #t6:target #p6 {
     transform: translateX(-190%);
     -webkit-transform: translateX(-190%);
     -moz-transform: translateX(-190%);
@@ -142,14 +150,16 @@ body{
   #t2:target #p1, 
   #t3:target #p1,
   #t4:target #p1,
-  #t5:target #p1{
+  #t5:target #p1,
+  #t6:target #p1{
     background: black;
   }
   
   #t2:target #p1 .icon, 
   #t3:target #p1 .icon,
   #t4:target #p1 .icon,
-  #t5:target #p1 .icon {
+  #t5:target #p1 .icon,
+  #t6:target #p1 .icon {
     -webkit-filter: blur(3px);
   }
   
@@ -170,7 +180,8 @@ body{
   #t2:target ul .icon,
   #t3:target ul .icon,
   #t4:target ul .icon,
-  #t5:target ul .icon{
+  #t5:target ul .icon,
+  #t6:target ul .icon{
     transform: scale(.6);
     -webkit-transform: scale(.6);
     -moz-transform: scale(.6);
@@ -181,7 +192,8 @@ body{
   #t2:target #dos,
   #t3:target #tres,
   #t4:target #cuatro,
-  #t5:target #cinco {
+  #t5:target #cinco,
+  #t6:target #seis {
     transform: scale(1.2) !important;
     -webkit-transform: scale(1.2) !important;
     -moz-transform: scale(1.2) !important;
@@ -229,6 +241,10 @@ body{
     display: inherit !important;
   }
   
+  #p6 .hint {
+    display: inherit !important;
+  }
+
   .hint a {
     color: yellow;
     transition: all 250ms ease-out;
@@ -278,7 +294,8 @@ body{
   #t2:target .page#p2 .icon,
   #t3:target .page#p3 .icon,
   #t4:target .page#p4 .icon,
-  #t5:target .page#p5 .icon {
+  #t5:target .page#p5 .icon,
+  #t6:target .page#p6 .icon {
     transform: translateX(0) !important;
     -webkit-transform: translateX(0) !important;
     -moz-transform: translateX(0) !important;
@@ -286,6 +303,8 @@ body{
     transition-delay: 1s;
   }
   
+
+
   /* KEYFRAMES */
 
 @keyframes spin {
@@ -659,14 +678,13 @@ ul {
 }
 ul.social-icons {
     
-  left: -190px;
-  margin-top: 10px;
-  bottom: -645px;
-  /* top: 650px; */
-  right: 8px;
-  width: 500px;
-  position: relative;
-  text-align: center;
+  left: -797px;
+    margin-top: 10px;
+    bottom: 1px;
+    right: 38px;
+    width: 500px;
+    position: relative;
+    text-align: center;
     
 }
 .social-icons li {
