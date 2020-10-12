@@ -11,7 +11,7 @@ import { filter, distinct , tap, distinctUntilChanged } from 'rxjs/operators';
 })
 export class GifsService {
   static readonly giphyUrl = 'https://api.giphy.com/v1/gifs/search';
-  static readonly giphyApiKey = 'fplmvx8SXBNfVr2lvEKkibWPwyky5KXG'; // putting this key here hurts my soul
+  static readonly giphyApiKey = 'qe4t4mtQV7Hgqno9d22n8zaZQAdhtcac'; // putting this key here hurts my soul
 
   private readonly rating = 'G';
   private readonly lang = 'en';

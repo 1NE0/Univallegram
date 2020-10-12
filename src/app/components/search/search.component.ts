@@ -11,6 +11,7 @@ export class SearchComponent  {
 
   items : [] = [];
   primerElemento : any;
+  primerElementoSrc : any;
   segundoElemento : any;
   tercerElemento : any;
   cuartoElemento : any;
@@ -26,6 +27,7 @@ export class SearchComponent  {
       console.log(respuesta.items);
       this.items = respuesta.items;
       this.primerElemento = respuesta.items[0].pagemap.cse_thumbnail[0];
+      this.primerElementoSrc = respuesta.items[0].pagemap.cse_thumbnail[0].src;
       this.segundoElemento = respuesta.items[1].pagemap.cse_thumbnail[0];
       this.tercerElemento = respuesta.items[2].pagemap.cse_thumbnail[0];
       this.cuartoElemento = respuesta.items[3].pagemap.cse_thumbnail[0];
