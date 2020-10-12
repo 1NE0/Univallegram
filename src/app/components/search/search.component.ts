@@ -6,29 +6,25 @@ import { BusquedaService } from '../../services/busqueda.service';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent  {
 
   items : [] = [];
-  objBusqueda;
+  //objBusqueda;
   
-
   constructor( private search: BusquedaService ) { }
 
-  ngOnInit(): void {
-    this.mostrarResp();
-  } 
+  /*ngOnInit( ): void {
+    this.mostrarResp(consulta);
+  }*/ 
 
-  mostrarResp(){
-    this.search.getResults()
+  mostrarResp( consulta : string ){
+    console.log(consulta);
+
+    this.search.getResults(consulta)
     .subscribe(respuesta =>{
       console.log(respuesta.items);
-      this.objBusqueda = respuesta.items
+      this.items = respuesta.items;
     });
   }
 
-  buscar(consulta : string){
-    if(consulta){
-      this.mostrarResp();
-    }
-  }
 }

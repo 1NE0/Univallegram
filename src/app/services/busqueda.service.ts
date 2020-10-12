@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams  } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -13,12 +14,17 @@ export class BusquedaService {
 
   constructor(private http: HttpClient) { }
 
-  getResults(){
+  
+  getResults( consulta : string){
     const url = `${ this.URL }`;
     const params = new HttpParams()
       .set('key', this.apikey)
       .set('cx', this.idMotor)
-      .set('q', 'lectures')
+      .set('q', consulta)
     return this.http.get<any>(url, { params });
+  }
+
+  buscarResult( consulta : string ){
+    return this.getResults(`/v1?key=${ this.apikey }&cx=${ this.idMotor }&q=${ consulta }`);
   }
 }
