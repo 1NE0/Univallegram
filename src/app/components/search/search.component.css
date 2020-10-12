@@ -27,14 +27,13 @@
 
 @media only screen and (min-width: 1440px) {
     .caja{
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         height: 700px;
         width: 90%;
     }
   }
 
 .inputCaja{
-    width: 80%;
-    margin-right: 0px;
-    margin-left: 10px;
+    width: 90%!important;
+    margin-right: 10px;
 }

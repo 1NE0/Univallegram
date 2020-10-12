@@ -132,10 +132,10 @@ body{
   }
   
   #p1 { background: #1d2630!important; }
-  #p2 { background: #d7385e; }
+  #p2 { background: linear-gradient(45deg, #24006b, #f42f8c); }
   #p3 { background: #00587a; }
   #p4 { background: hsl(165, 50%, 48%); }
-  #p5 { background: rgb(0, 0, 0); }
+  #p5 { background: linear-gradient(to bottom right,#002f4b,rgb(51, 179, 151))}
   #p6 { background: #121119;}
   #p7 { background: hsl(0, 0%, 100%);}
 
