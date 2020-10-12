@@ -9,7 +9,7 @@ export class BusquedaService {
 
   private URL = 'https://customsearch.googleapis.com/customsearch/v1';
   private idMotor = '5c3ab6a4bb541a318';
-  private apikey = 'AIzaSyAyFmmsFTZQbhNU5Ew4VamA5fN62KbycQU';
+  private apikey = 'AIzaSyDhtm0HLVF9HuUJdLjmkdYqbaVxItXHqKw';
   //private q;
 
   constructor(private http: HttpClient) { }
