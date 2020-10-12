@@ -2,5 +2,30 @@
 .caja{
     overflow-y: scroll;
     height: 500px;
+    width: 90%;
+}
+
+.imagenes{
+    background-color: white;
+    margin: 10px;
+}
+
+.card{
+    width: 99%!important;
+    color: black;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .caja{
+        overflow-y: scroll;
+        height: 700px;
+        width: 90%;
+    }
+  }
+
+.inputCaja{
     width: 80%;
+    margin-right: 0px;
+    margin-left: 10px;
 }

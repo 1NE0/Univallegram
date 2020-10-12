@@ -48,6 +48,10 @@ body{
     padding: 100px;
 }
 
+.container{
+  width: 100%;
+}
+
 .imagen{
   margin:10px auto;
   margin-top: 130px;
