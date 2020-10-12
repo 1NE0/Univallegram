@@ -10,6 +10,7 @@ import { LiveComponent } from './components/live/live.component';
 import { HomeComponent } from './components/home/home.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { MapaComponent } from './components/mapa/mapa.component';
+import { SearchComponent } from './components/search/search.component';
 import { GifComponent } from './components/gif/gif.component';
 import { FormsModule } from '@angular/forms';
 import { CreditosComponent } from './components/creditos/creditos.component';
@@ -23,6 +24,7 @@ import { CreditosComponent } from './components/creditos/creditos.component';
     HomeComponent,
     NoticiasComponent,
     MapaComponent,
+    SearchComponent,
     GifComponent,
     CreditosComponent
   ],
