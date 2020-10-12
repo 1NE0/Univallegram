@@ -685,7 +685,7 @@ ul {
 }
 ul.social-icons {
     
-  left: -797px;
+  left: -763px;
     margin-top: 10px;
     bottom: 1px;
     right: 38px;
@@ -694,6 +694,21 @@ ul.social-icons {
     text-align: center;
     
 }
+
+@media only screen and (min-width: 1440px) {
+  ul.social-icons {
+    
+    left: -797px;
+      margin-top: 10px;
+      bottom: 1px;
+      right: 38px;
+      width: 500px;
+      position: relative;
+      text-align: center;
+      
+  }
+}
+
 .social-icons li {
     vertical-align: top;
     display: inline;
