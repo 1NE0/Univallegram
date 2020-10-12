@@ -639,9 +639,6 @@ body {
   animation: spin .5s linear 0s infinite;
 }
 
-
-
-
 /* aaaaaaaaa */
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
@@ -676,24 +673,37 @@ ul {
 .footer-social-icons {
     width: 200px;
     display:block;
-    margin: 0 auto;
-    
-    
+    margin: 0 auto;   
 }
+
 .social-icon {
     color: #fff;
 }
 ul.social-icons {
     
-  left: -797px;
+  left: -765px;
     margin-top: 10px;
     bottom: 1px;
     right: 38px;
     width: 500px;
     position: relative;
-    text-align: center;
-    
+    text-align: center;    
 }
+
+@media only screen and (min-width: 1440px) {
+  ul.social-icons {
+    
+    left: -797px;
+      margin-top: 10px;
+      bottom: 1px;
+      right: 38px;
+      width: 500px;
+      position: relative;
+      text-align: center;
+      
+  }
+}
+
 .social-icons li {
     vertical-align: top;
     display: inline;
